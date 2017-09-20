@@ -1,0 +1,26 @@
+.person {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+
+   &__about {
+      margin-left: rem(16px);
+      white-space: nowrap;
+      overflow: hidden;
+   }
+
+   &__info {
+      display: block;
+      font-weight: $font-weight--normal;
+      color: $color-text--secondary;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &--name {
+         font-weight: $font-weight--semi-bold;
+         color: $color-text--dark;
+         text-transform: capitalize;
+      }
+   }
+}

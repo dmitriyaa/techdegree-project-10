@@ -1,0 +1,26 @@
+.search-form {
+   width: 100%;
+   padding-top: 1rem;
+   padding-bottom: 2rem;
+
+   @include mq(tablet) {
+      width: 70%;
+   }
+
+   &__input {
+      width: 100%;
+      padding: 15px 10px;
+      background: transparent;
+      font-family: $font-family--primary;
+      font-weight: $font-weight--extra-light;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+      color: $color-text--light;
+      border: none;
+      border-bottom: 1.5px solid $color-primary--light;
+
+      &::placeholder {
+         color: $color-text--light;
+      }
+   }
+}

@@ -1,0 +1,13 @@
+.main-header {
+   margin-top: 0;
+   margin-bottom: 2rem;
+   padding: 1rem;
+   background: url('../images/background.png') center/cover no-repeat;
+   box-shadow: $box-shadow--material;
+
+   &__heading {
+      font-weight: $font-weight--light;
+      text-transform: uppercase;
+      color: $color-text--light;
+   }
+}

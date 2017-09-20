@@ -1,0 +1,15 @@
+@mixin mq($break) {
+   @if $break == "tablet" {
+      @media only screen and (min-width: $breakpoint--tablet) {
+         @content;
+      }
+   }
+   @else if $break == "desktop" {
+      @media only screen and (min-width: $breakpoint--desktop) {
+         @content;
+      }
+   }
+   @else {
+      @error "No value could be retreived for '#{$break}'"
+   }
+}

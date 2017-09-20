@@ -1,0 +1,18 @@
+.image {
+
+   &--avatar {
+      min-width: rem(80px);
+      min-height: rem(80px);
+      border-radius: 50%;
+
+      @include mq(tablet) {
+         min-width: rem(90px);
+         min-height: rem(90px);
+      }
+
+      @include mq(desktop) {
+         min-width: rem(100px);
+         min-height: rem(100px);
+      }
+   }
+}

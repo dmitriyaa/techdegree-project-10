@@ -1,0 +1,48 @@
+/* ======================================
+Global Config
+========================================= */
+
+// Font Stacks
+
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800');
+
+$font-family--primary   : 'Dosis', sans-serif;
+
+// Font Weights
+$font-weight--extra-light : 200;
+$font-weight--light       : 300;
+$font-weight--normal      : 400;
+$font-weight--medium      : 500;
+$font-weight--semi-bold   : 600;
+$font-weight--bold        : 700;
+$font-weight--extra-bold  : 800;
+
+// Discriptive Base Colors
+
+$white   : #ffffff;
+$black   : #000000;
+
+// Functional Colors
+
+$color-primary--dark   : #000051;
+$color-primary         : #1a237e;
+$color-primary--light  : #448aff;
+// $color-secondary : $gorse;
+
+$color-text--dark         : #212121;
+$color-text--light        : #FFFFFF;
+$color-text--secondary    : #757575;
+$color-divider            : #BDBDBD;
+
+// Box shadow
+$box-shadow--material     : 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+// Text
+
+$base__font-size   : 1rem;
+$base__line        : 1.6;
+
+// Breakpoints
+
+$breakpoint--tablet    : 660px;
+$breakpoint--desktop   : 1024px;
