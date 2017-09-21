@@ -22,5 +22,13 @@
          color: $color-text--dark;
          text-transform: capitalize;
       }
+
+      &--city {
+         text-transform: capitalize;
+      }
+
+      &--address {
+         text-transform: capitalize;
+      }
    }
 }

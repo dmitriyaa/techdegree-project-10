@@ -2,6 +2,7 @@
    display: flex;
    flex-wrap: wrap;
    justify-content: flex-start;
+   // margin-bottom: 2rem;
 
    &__item {
       flex: 1 100%;
@@ -15,6 +16,7 @@
 
       @include mq(tablet) {
          flex: 0 calc(50% - 1rem);
+         max-width: calc(50% - 1rem);
          margin: .5rem;
       }
 
@@ -22,6 +24,10 @@
          flex: 0 calc(32.3333% - 1rem);
          max-width: calc(32.3333% - 1rem);
          margin: .5rem;
+      }
+
+      &:hover {
+         box-shadow: $box-shadow--material-hover;
       }
    }
 }

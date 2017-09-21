@@ -2,6 +2,8 @@
 Global Config
 ========================================= */
 @import url("https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Grand+Hotel|Oswald:200,300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i");
 /* =================================
 Helper functions
 ==================================== */
@@ -405,7 +407,7 @@ body {
   font-family: "Dosis", sans-serif;
   font-weight: 500;
   color: #212121;
-  background: #f5f0f0; }
+  background: #F9FBFA; }
 
 ul {
   list-style: none;
@@ -429,6 +431,23 @@ input {
     @media only screen and (min-width: 660px) {
       .container--header {
         min-height: 200px; } }
+
+footer {
+  text-align: center;
+  padding: 20px 0; }
+
+.signature p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 3px; }
+
+.signature a {
+  font-family: 'Grand Hotel', sans-serif;
+  font-size: 27px;
+  text-transform: capitalize;
+  color: #1457A6;
+  text-decoration: none; }
 
 .main-header {
   margin-top: 0;
@@ -457,12 +476,15 @@ input {
     @media only screen and (min-width: 660px) {
       .list__item {
         flex: 0 calc(50% - 1rem);
+        max-width: calc(50% - 1rem);
         margin: .5rem; } }
     @media only screen and (min-width: 1024px) {
       .list__item {
         flex: 0 calc(32.3333% - 1rem);
         max-width: calc(32.3333% - 1rem);
         margin: .5rem; } }
+    .list__item:hover {
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
 .person {
   display: flex;
@@ -482,6 +504,10 @@ input {
     .person__info--name {
       font-weight: 600;
       color: #212121;
+      text-transform: capitalize; }
+    .person__info--city {
+      text-transform: capitalize; }
+    .person__info--address {
       text-transform: capitalize; }
 
 .image--avatar {
@@ -517,5 +543,54 @@ input {
     border-bottom: 1.5px solid #448aff; }
     .search-form__input::placeholder {
       color: #FFFFFF; }
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+  .modal__content {
+    text-align: center;
+    background-color: #ffffff;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 6px;
+    width: 90%;
+    /* Could be more or less, depending on screen size */
+    max-width: 400px;
+    cursor: default; }
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+
+.separator {
+  display: block;
+  border-bottom: 1px solid #BDBDBD;
+  margin: 1.5rem 1rem; }
 
 /*# sourceMappingURL=master.css.map */
