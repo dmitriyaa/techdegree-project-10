@@ -564,7 +564,7 @@ footer {
   .modal__content {
     text-align: center;
     background-color: #ffffff;
-    margin: 50% auto;
+    margin: 15% auto;
     /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
@@ -573,9 +573,6 @@ footer {
     /* Could be more or less, depending on screen size */
     max-width: 400px;
     cursor: default; }
-    @media only screen and (min-width: 660px) {
-      .modal__content {
-        margin: 15% auto; } }
 
 .close {
   color: #aaa;
